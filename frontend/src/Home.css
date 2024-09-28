@@ -1,0 +1,272 @@
+/* General body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #c8cbee; /* Light blue background */
+}
+
+/* App container and basic text alignment */
+.App {
+  text-align: center;
+}
+
+/* Container for overall layout and padding */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Header styling */
+header {
+  background-color: #c8cbee;
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+header h1 {
+  color: rgb(5, 5, 5);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Styling for logo images */
+.logo {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Specific styling for panda images */
+.panda-image {
+  width: 150px;
+  height: auto;
+}
+
+/* Navbar styles */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Module list and item styles */
+.module-list {
+  padding: 20px;
+}
+
+.module-item {
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Star rating styles */
+.stars {
+  color: gold;
+  font-size: 24px;
+}
+
+/* Krav Maga specific page styling */
+.kravmaga {
+  background-color: #c8cbee;
+  color: rgb(5, 5, 5);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #8f1c3d;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* Hover state for buttons */
+.btn:hover {
+  background-color: #b81d4f;
+}
+
+/* Back button styles */
+.btn-back {
+  background-color: #8f1c3d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Specific styles for module buttons */
+.module-btn {
+  background-color: #1d1760;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Hover state for module buttons */
+.module-btn:hover {
+  background-color: #3742fa;
+}
+
+/* Box styling for My Progress and Description */
+.progress,
+.description {
+  background-color: #ffffff;
+  border: 2px solid #8f1c3d; /* Differentiate with outline */
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto; /* Centered and not too wide */
+  max-width: 70%; /* Decreased width to avoid touching the sides */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific to each box if you need further differentiation */
+.progress {
+  border-color: #007bff; /* Blue outline for My Progress */
+}
+
+.description {
+  border-color: #8f1c3d; /* Red outline for Description */
+}
+
+/* Video player styling */
+.video {
+  height: 95vh; /* Almost full screen height */
+  width: auto; /* Adjust the width while keeping the aspect ratio */
+  object-fit: cover; /* Ensures the video covers the screen, even if cropped */
+}
+
+/* Styles for the video container */
+.video-page-container {
+  position: relative;
+  min-height: 100vh; /* Ensure the container takes up the full viewport height */
+}
+
+/* Styling for the video itself */
+video {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Continue button at the very bottom of the screen */
+.btn-continue {
+  position: fixed;
+  bottom: 0; /* Button at the very bottom */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #8f1c3d;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Full width */
+  text-align: center;
+  z-index: 10; /* Ensure the button stays above the video */
+}
+
+/* Progress meter styling */
+.progress-meter {
+  font-size: 24px;
+  color: green;
+  border: 2px solid black; /* Boxed */
+  padding: 5px 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Positioned in the upper right corner */
+}
+
+/* Video player styling for smaller displays */
+.video-player-small {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Learn page specific styling */
+.learn-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+/* Webcam video styling */
+#webcam {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+/* Modules button styled like other buttons */
+.btn-modules {
+  background-color: #8f1c3d; /* Same as other buttons */
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Responsive styles for larger devices (tablets and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+
+  header {
+    text-align: left;
+    padding: 20px;
+  }
+
+  nav ul li {
+    margin-right: 30px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}
+
+/* Additional styles for desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+
+  nav ul li {
+    margin-right: 40px;
+  }
+
+  .btn {
+    font-size: 20px;
+  }
+}
